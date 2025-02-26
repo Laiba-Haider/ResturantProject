@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: -1;
+}
+
+.background-video video {
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensure the video covers the entire background */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   /* position: relative;*/
+  /*  z-index: 1;*/ /* Ensure navigation is above the video */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 0;
+}
+
+nav h2 {
+    color: white;
+    font-family: Blackadder ITC;
+    font-size: 35px;
+    margin-right: auto; /* Pushes links to the right */
+    padding-left: 8%;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFB6C1;
+    font-weight: bold;
+    /*text-decoration-style: underline;*/
+    text-decoration-line: underline;
+}
+
+.content {
+    text-align: center;
+    color: whitesmoke;
+    font-family: Harlow Solid Italic ;
+    margin-top: 10vh; /* Adjust as needed */
+    padding: 0 20px;
+    font-family: cursive;
+}
+
+h6 {
+
+    font-size: 40px;
+    color: darkgoldenrod;
+}
+
+pre {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.book-table-button a {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.book-table-button a:hover {
+    /*color: whitesmoke;*/
+    background-color: chocolate;
+}
+
+footer {
+     padding: 2%;
+    text-align: center;
+    /*background-color: black;*/
+   background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    
+    position: relative;
+    margin-top: 12%;
+   /* z-index: 1;*/ /* Ensure footer is above the video */
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FEEDBACK</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #222222;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+        }
+        nav h2 {
+            color: white;
+            font-family: Blackadder ITC;
+            font-size: 35px;
+            margin-right: auto;
+            padding-left: 8%;
+        }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFB6C1;
+            font-weight: bold;
+            text-decoration-line: underline;
+        }
+        .container {
+            width: 35%;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: orange;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+            color: darkorange;
+        }
+        input, textarea, select {
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            width: 100px;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Pakistani Zaika</h2>
+        <a href="Homepage.html">Home</a>
+        <a href="../php/Menu1.php">Menu</a>
+        <a href="Login.html">Login</a>
+        <a href="CreateAccount.html">Sign up</a>
+    </nav>
+    <div class="container">
+        <h2>Feedback</h2>
+
+
+        <form id="feedback" action="../php/insertionfeedback.php" method="POST">
+
+             <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="feedbackRatings">Feedback Rating (1-5):</label>
+            <select id="feedbackRatings" name="feedbackRatings" required>
+                <option value="">Select Rating</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="feedbackDate">Feedback Date:</label>
+            <input type="date" id="feedbackDate" name="feedbackDate" required>
+
+            <label for="feedbackReviews">Feedback:</label>
+            <textarea id="feedbackReviews" name="feedbackReviews" rows="4"></textarea>
+
+           
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Apply a solid background color to the entire body */
+body {
+    background-color: #36454F; /* Dark blue background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav h2 {
+    color: #fff;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Center the container and apply padding */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white; /* White background for the user data section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Style for the user information */
+.user-info {
+    margin-bottom: 20px;
+    text-align: left; /* Align the text to the left for readability */
+}
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.action-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+/* Style for the logout link */
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9534f; /* Red background color for logout button */
+    color: white;
+    text-decoration: none;
+    border
+}
+.logout-button a{   display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #45a049;
+}

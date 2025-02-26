@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pakistani Zaika</title>
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('../image/g.WEBP') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            padding: 15px 8%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        nav h2 {
+            color: #FFD700;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFB6C1;
+            text-decoration: underline;
+        }
+
+        /* Page Content */
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin-top: 100px; /* Prevents content from hiding under navbar */
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(255, 215, 0, 0.4);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            color: #FFD700;
+            font-size: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #FFD700;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            color: #F7DC67;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin-top: 20px;
+            padding: 15px;
+            border-top: 2px solid goldenrod;
+            text-align: left;
+        }
+
+        .contact-info span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: orange;
+            margin-top: 10px;
+        }
+
+        .contact-info pre {
+            color: white;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>Pakistani Zaika</h2>
+        <div>
+            <a href="Homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container">
+        <h1>About Us</h1>
+        <p>
+            "Welcome to our restaurant, where food and passion come together.  
+            Our story began with a dream to create a warm and inviting space  
+            where friends and family could gather to enjoy delicious, homemade cuisine.  
+            Our mission is to provide exceptional service, quality ingredients,  
+            and a memorable dining experience. Meet our team led by Ahmad and  
+            Manager Ali, who bring years of experience and dedication to every dish.  
+            We're proud to serve traditional Pakistani cuisine with a focus on  
+            locally sourced ingredients. We look forward to serving you!"
+        </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container contact-info">
+        <h1>Get in Contact With Us:</h1>
+
+        <span>Email:</span>
+        <pre>
+231400096@gift.edu.pk
+231400100@gift.edu.pk
+231400145@gift.edu.pk
+        </pre>
+
+        <span>Phone:</span>
+        <pre>
+0321-4569874
+0369-8521478
+0325-8963147
+        </pre>
+
+        <span>Address:</span>
+        <pre>
+GIFT University, Pakistan
+        </pre>
+    </div>
+
+</body>
+</html>

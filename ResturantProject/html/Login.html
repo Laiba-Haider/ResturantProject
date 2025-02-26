@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background: url(../image/5.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px 0;
+        }
+
+        nav h2 {
+            color: white;
+            font-family: Blackadder ITC;
+            font-size: 35px;
+            margin-right: auto; /* Pushes links to the right */
+            padding-left: 8%;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFB6C1;
+            font-weight: bold;
+            text-decoration-line: underline;
+        }
+
+        .login-form-container {
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .login-form h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .login-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .login-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: darkred;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        h2 a {
+            color: purple;
+        }
+
+        h2 a:hover {
+            font-size: 13px;
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Pakistani Zaika</h2>
+       <a href="Homepage.html">Home</a>
+        <a href="About.html">About Us</a>
+         <a href="Booktable.html">Book Table</a>
+        <a href="../php/Menu1.php">Menu</a>
+       <!--  <a href="Order.html">Order now</a> -->
+        <a href="Login.html">Login</a>
+        <a href="staffform.html">Staff</a>
+        <a href="CreateAccount.html">Sign up</a>
+        <a href="Feedback.html">Feedback</a>
+    </nav>
+
+    <div class="login-form-container">
+        <form class="login-form" action="../php/login.php" method="POST">
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <h2>If you don't have an Account <a href="CreateAccount.html"><u>Click Here</u></a></h2>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

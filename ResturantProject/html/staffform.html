@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff</title>
+    <style type="text/css">
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background: url(../image/I.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .order-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+        
+            border-radius: 5px;
+           background-color: rgba(0, 0, 0, 0.7); 
+        }
+
+        nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   /* position: relative;*/
+  /*  z-index: 1;*/ /* Ensure navigation is above the video */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px 0;
+}
+
+nav h2 {
+    color: white;
+    font-family: Blackadder ITC;
+    font-size: 35px;
+    margin-right: auto; /* Pushes links to the right */
+    padding-left: 8%;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFB6C1;
+    font-weight: bold;
+    /*text-decoration-style: underline;*/
+    text-decoration-line: underline;
+}
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: beige;
+        }
+        input[type="text"], input[type="tel"],input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+        <h2>Pakistani Zaika</h2>
+        <a href="Homepage.html">Home</a>
+        <a href="../php/Menu1.php">Menu</a>
+        <a href="Login.html">Login</a>
+        <a href="CreateAccount.html">Sign up</a>
+    </nav>
+    <div class="order-container">
+        <h1>Add Staff Member</h1>
+        
+        <form action="../php/submit_staff.php" method="POST">
+            <div class="form-group">
+                <label for="user_id">User ID:</label>
+                <input type="text" id="user_id" name="user_id" placeholder="User ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="staff_name">Staff Name:</label>
+                <input type="text" id="staff_name" name="staff_name" placeholder="Staff Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="staff_phone">Staff Phone:</label>
+                <input type="text" id="staff_phone" name="staff_phone" placeholder="Staff Phone">
+            </div>
+
+            <div class="form-group">
+                <label for="staff_shift">Staff Shift:</label>
+                <input type="text" id="staff_shift" name="staff_shift" placeholder="Staff Shift">
+            </div>
+
+            <div class="form-group">
+                <label for="staff_role">Staff Role:</label>
+                <input type="text" id="staff_role" name="staff_role" placeholder="Staff Role">
+            </div>
+
+            <!-- New password field -->
+            <div class="form-group">
+                <label for="staff_password">Staff Password:</label>
+                <input type="password" id="staff_password" name="staff_password" placeholder="Staff Password" required>
+
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

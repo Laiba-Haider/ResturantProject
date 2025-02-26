@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<style type="text/css">
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+/*	background: url(t.jpg);*/
+	background-color: #36454F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: -1;
+}
+
+.background-video video {
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensure the video covers the entire background */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   /* position: relative;*/
+  /*  z-index: 1;*/ /* Ensure navigation is above the video */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 0;
+}
+
+nav h2 {
+    color: white;
+    font-family: Blackadder ITC;
+    font-size: 35px;
+    margin-right: auto; /* Pushes links to the right */
+    padding-left: 8%;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFB6C1;
+    font-weight: bold;
+    /*text-decoration-style: underline;*/
+    text-decoration-line: underline;
+}
+
+		.container {
+			margin-top: 5%;
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.container div {
+			background-color: darkblue;
+			color: white;
+			text-align: center;
+			width: 200px;
+			padding: 20px;
+			border-radius: 20px;
+			transition: all 0.3s ease;
+		}
+
+		.container div a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.container div:hover {
+			background-color: darkred;
+		}
+
+		.container div:hover a {
+			color: blanchedalmond;
+		}
+		h2{
+		    font-family: Blackadder ITC;
+		    font-size: 35px;
+		    color: darkgrey;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+        <h2>Pakistani Zaika</h2>
+        <a href="Homepage.html">Home</a>
+        <a href="About.html">About Us</a>
+         <a href="Booktable.html">Book Table</a>
+        <a href="Menu1.php">Menu</a>
+       <!--  <a href="Order.html">Order now</a> -->
+        <a href="Login.html">Login</a>
+        <a href="CreateAccount.html">Sign up</a>
+        <a href="Feedback.html">Feedback</a>
+
+       
+    </nav>
+
+	<div class="container">
+		<div>
+			<a href="Login.html">Login as People</a>
+		</div>
+		<div>
+			<a href="Login.html">Login as Management</a>
+		</div>
+	</div>
+</body>
+</html>
+
+

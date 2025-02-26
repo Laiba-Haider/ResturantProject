@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            background: url(../image/e.AVIF);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+        }
+        nav h2 {
+            color: white;
+            font-family: Blackadder ITC;
+            font-size: 35px;
+            margin-right: auto;
+            padding-left: 8%;
+        }
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFB6C1;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .order-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: darkgoldenrod;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            color: orange;
+            font-weight: bold;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="tel"], 
+        textarea, 
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: lightgrey;
+        }
+        select[multiple] {
+            height: 70px;
+            background-color: lightgrey;
+        }
+        
+        /* Updated Select Items Section */
+        #items-container {
+            max-height: 200px; /* Enables scrolling */
+            overflow-y: auto; /* Vertical scrollbar if needed */
+            padding: 10px;
+            border: 2px solid #007bff; /* Blue border */
+            border-radius: 8px;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        #items-container input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #items-container label {
+            color: #333;
+            font-weight: normal;
+            display: block;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        #items-container input[type="checkbox"]:checked + label {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Pakistani Zaika</h2>
+        <a href="Homepage.html">Home</a>
+        <a href="../php/Menu1.php">Menu</a>
+        <a href="Login.html">Login</a>
+        <a href="CreateAccount.html">Sign up</a>
+    </nav>
+    <div class="order-container">
+        <h1>Place Your Order</h1>
+        <form action="../php/submit_order.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Items:</label><br>
+                <div id="items-container">
+                    <input type="checkbox" id="item1" name="items[]" value="Spaghetti Bolognese">
+                    <label for="item1">Spaghetti Bolognese</label>
+
+                    <input type="checkbox" id="item2" name="items[]" value="Caesar Salad">
+                    <label for="item2">Caesar Salad</label>
+
+                    <input type="checkbox" id="item3" name="items[]" value="Paratha Roll">
+                    <label for="item3">Paratha Roll</label>
+
+                    <input type="checkbox" id="item4" name="items[]" value="Margherita Pizza">
+                    <label for="item4">Margherita Pizza</label>
+
+                    <input type="checkbox" id="item5" name="items[]" value="Chicken Alfredo">
+                    <label for="item5">Chicken Alfredo</label>
+
+                    <input type="checkbox" id="item6" name="items[]" value="Greek Salad">
+                    <label for="item6">Greek Salad</label>
+
+                    <input type="checkbox" id="item7" name="items[]" value="BBQ Ribs">
+                    <label for="item7">BBQ Ribs</label>
+
+                    <input type="checkbox" id="item8" name="items[]" value="Vegetarian Burger">
+                    <label for="item8">Vegetarian Burger</label>
+
+                    <input type="checkbox" id="item9" name="items[]" value="Seafood Paella">
+                    <label for="item9">Seafood Paella</label>
+
+                    <input type="checkbox" id="item10" name="items[]" value="Steak Frites">
+                    <label for="item10">Steak Frites</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity" required>
+                    <option value="">Select Quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="e.g: I like food taste."></textarea>
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
